@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- My CSS Style -->
+  <link rel="stylesheet" href="style.css" />
+  
+  
+  
+  <title>Empresas IOASYS | Home </title>
+
+</head>
+
+
+<body>
+
+  
+  
+  <div class="container" > <!-- Container Principal -->
+    
+    <nav class="navbar navbar-light bg-light navbackground">
+        <a id="logo2" class="col order-first navbar-brand" href="#">
+          <img src="img/logo-nav.png"
+             srcset="img/logo-nav@2x.png 2x,
+                     img/logo-nav@3x.png 3x"
+             class="logo_nav" alt="logotipo IOASYS">
+        </a>
+      
+        <input id="searchbox" type="search" placeholder="Pesquisar"> 
+   </nav>
+    
+    <div class="container"> <!-- Iinicio Container Lista --> 
+        <ul id="lista">
+          <li class="row" >
+            <div class="col-sm">    
+                    <picture>
+                          <img src="img/img-e-1-lista.svg"
+                           class="img-fluid" alt="Responsive image">
+                    </picture>
+                </div>
+                <div id="item1" class="col-sm">
+                    <h1>Empresa 1</h1>
+                    <h2>Negócio</h2>
+                    <h3>Brasil</h3>
+                </div>
+            </li>
+            <li class="row" >
+              <div class="col-sm">    
+                      <picture>
+                            <img src="img/img-e-1-lista.svg"
+                             class="img-fluid" alt="Responsive image">
+                      </picture>
+                  </div>
+                  <div id="item1" class="col-sm">
+                      <h1>Empresa 2</h1>
+                      <h2>Negócio</h2>
+                      <h3>Brasil</h3>
+                  </div>
+              </li>
+           </ul>  
+        </div>   <!-- Fim Container Lista -->
+    
+        <div id="clique" class="container">
+          <div id="linha" class="row">
+            <div class="col align-self-center">
+              <h3>Clique na busca para iniciar.</h3>
+            </div>
+          </div>
+        </div>
+    
+  </div> <!-- Container Principal -->
+    
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
+  <script>
+
+   
+  $(document).ready(function(){
+      var x = $("#logo2")
+      var y = $("#searchbox")
+     
+      y.on('click', function(){
+       x.hide(900);
+       });
+      
+      y.on('click', function(){
+       $('#lista').show(900);
+       });  
+      
+      y.on('click', function(){
+       $('#clique').hide(900);
+       });   
+    
+      y.on('focusout', function(){
+       x.show(900);
+      });
+    
+      y.on('focusout', function(){
+       $('#lista').hide(900);
+      });
+    
+      y.on('focusout', function(){
+       $('#clique').show(900);
+      });
+});
+    </script>
+  
+    <script type="text/javascript">
+      $(function(){
+      $("#searchbox").keyup(function(){
+        var texto = $(this).val();
+        
+        
+         
+        $("#lista li").css("display", "flex");
+        $("#lista li").each(function(){
+          if($(this).text().toUpperCase().indexOf(texto.toUpperCase()) < 0)
+        $(this).css("display", "none");
+        });
+    });
+});
+</script>
+    
+    <script>
+    $('input#searchbox').quicksearch('ul#lista li div:lastchild h1');
+        
+    </script>
+  
+  
+</body>
+</html>

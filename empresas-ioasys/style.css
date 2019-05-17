@@ -1,0 +1,236 @@
+
+:root {
+  --beige: #ebe9d7;
+  --white: #d8d8d8;
+  --medium-pink: #ee4c77;
+  --night-blue: #0d0430;
+  --charcoal-grey: #383743;
+  --greeny-blue: #57bbbc;
+}
+
+body {
+  background-color: beige;
+     
+ 
+}
+
+#area-login {
+margin: 10% 0 5% 0;
+
+    
+}
+
+#titulo {
+    display: block;
+    margin: auto;
+    padding-top: 67px;
+}
+
+#titulo p:first-child {
+  width: 176px;
+  height: 64px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--charcoal-grey);
+  margin: auto;
+}
+
+
+
+#titulo p:last-child {
+  width: 357.7px;
+  height: 52px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: var(--charcoal-grey);
+    margin: 20.5px auto;
+    
+}
+
+.logo_home {
+    width: 295px;
+    height: 72px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+
+#InputEmail1, #InputPassword1, #basic-addon1 {
+  background-color: beige;
+  border: none;
+  
+}
+
+#InputEmail1:focus {
+  border-color: red;
+}
+
+.inputs {
+  border-bottom: 2px var(--charcoal-grey) solid;
+  min-width: 324px;
+}
+
+#botao {
+  width: 324px;
+  height: 52.8px;
+  border-radius: 3.6px;
+  border-color: var(--greeny-blue);
+  background-color: var(--greeny-blue);
+  position: relative;
+  top: 46.3px;
+}
+s
+
+#entrar {
+  width: 70px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.navbackground {
+  max-width: 1024px;
+  height: 151px;
+  background-image: linear-gradient(173deg, var(--medium-pink), var(--night-blue));
+  flex-wrap: nowrap;
+
+}
+
+
+#searchbox {
+    border: none;
+    background-color: transparent;
+    background-image: url(img/ic-search-copy.svg);
+    background-position: ;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    transition: width 1s;
+    padding-left: 45px;
+    transition-timing-function: ease;
+    
+    }
+
+#searchbox:focus {
+    width: 95%;
+    margin-left: 5%;
+    outline: 0;
+    border-bottom: 1px #ffffff solid;
+    
+     }
+
+#logo2 {
+   text-align: center;
+}
+
+/* Formatação da Tabela */
+
+li {
+    margin-top: 30px;
+    max-width: 1024px;
+    background-color: white;
+    
+}
+  
+
+ul img {
+    margin: 5%;
+}
+
+#item1 {
+    padding-top: 20px;
+}
+
+#item1 h1 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a0e49;
+}
+
+#item1 h2 {
+  
+  width: 172.6px;
+  height: 32px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8d8c8c;
+}
+
+#item1 h3 {
+   width: 119.7px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8d8c8c;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  display: none;
+  
+}
+
+#clique h3 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: -0.5px;
+  color: var(--charcoal-grey);
+  text-align: center;
+  }
+
+#linha {
+  height: 400px;
+}
+
+#clique {
+  margin: 0;
+  max-width: 1024px; 
+}
